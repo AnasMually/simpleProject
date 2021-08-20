@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HarajTask</string>
+    <string name="search">search</string>
+    <string name="share">share</string>
+    <string name="error">error</string>
+    <string name="image_transition" translatable="false">image</string>
+    <string name="name_transition" translatable="false">name</string>
+    <string name="username_transition" translatable="false">username</string>
+    <string name="icon_username_transition" translatable="false">iconUsername</string>
+    <string name="icon_location_transition" translatable="false">iconLocation</string>
+    <string name="location_transition" translatable="false">location</string>
+</resources>

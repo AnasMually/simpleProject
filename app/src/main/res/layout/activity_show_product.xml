@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:transitionName="@string/image_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mar_view"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:transitionName="@string/name_transition"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_image"
+            tools:text="anas mugally" />
+
+        <TextView
+            android:id="@+id/car_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/data_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/car_name"
+            app:layout_constraintTop_toBottomOf="@id/car_name"
+            tools:text="anas mugally" />
+
+
+        <TextView
+            android:id="@+id/owner_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mar_between_text_and_icon"
+            android:textSize="@dimen/normal_text_size"
+            android:transitionName="@string/username_transition"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toEndOf="@id/icon_owner_username"
+            app:layout_constraintTop_toBottomOf="@id/car_data"
+            tools:text="anas mugally" />
+
+        <ImageView
+            android:id="@+id/icon_owner_username"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_user"
+            android:transitionName="@string/icon_username_transition"
+            app:layout_constraintBottom_toBottomOf="@id/owner_username"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/car_name"
+            app:layout_constraintTop_toBottomOf="@id/car_data"
+            app:layout_constraintTop_toTopOf="@id/owner_username" />
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mar_between_text_and_imaeg"
+            android:textSize="@dimen/normal_text_size"
+            android:transitionName="@string/location_transition"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_data"
+            tools:text="anas mugally" />
+
+        <ImageView
+            android:id="@+id/icon_location"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/mar_between_text_and_icon"
+            android:src="@drawable/ic_location"
+            android:transitionName="@string/icon_location_transition"
+            app:layout_constraintBottom_toBottomOf="@id/location"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/location"
+            app:layout_constraintTop_toTopOf="@id/location" />
+
+
+        <TextView
+            android:id="@+id/car_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/mar_between_text_and_imaeg"
+            android:layout_marginTop="@dimen/mar_view"
+            android:layout_marginEnd="@dimen/mar_view"
+            android:layout_marginBottom="@dimen/mar_view"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/owner_username"
+            tools:text="anas mugally" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
